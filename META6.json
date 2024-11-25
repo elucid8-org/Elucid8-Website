@@ -1,25 +1,19 @@
 {
-  "auth": "zef:librasteve",
-  "authors": [
-    "librasteve"
-  ],
-  "build-depends": [
-  ],
-  "depends": [
-  ],
-  "description": "blah blah blah",
-  "license": "Artistic-2.0",
-  "name": "Elucid8::Website",
-  "perl": "6.d",
-  "provides": {
-    "Elucid8::Website": "lib/Elucid8/Website.rakumod"
-  },
-  "resources": [
-  ],
-  "source-url": "",
-  "tags": [
-  ],
-  "test-depends": [
-  ],
-  "version": "0.0.1"
+    "name": "Elucid8::Website",
+    "description": "blah blah blah",
+    "version": "0.0.1",
+    "raku": "6.d",
+    "authors": [
+        "librasteve"
+    ],
+    "auth": "zef:librasteve",
+    "depends": [
+        "Cro::HTTP"
+    ],
+    "build-depends": [],
+    "provides": {
+        "Elucid8::Website": "lib/Elucid8/Website.rakumod"
+    },
+    "license": "Artistic-2.0",
+    "source-url": ""
 }
