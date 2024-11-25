@@ -5,7 +5,7 @@
 simple website written in Cro::WebApp to be served at https://elucid8.org
 
 # deployment
-- `git clone https://github.com/elucid8-org/website.git`
+- `zef install https://github.com/elucid8-org/Elucid8-Website.git`
 - `cd website`
 - `cro run`
 
