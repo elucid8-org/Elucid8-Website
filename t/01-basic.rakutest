@@ -1,0 +1,6 @@
+use Test;
+use Elucid8::Website;
+
+pass "replace me";
+
+done-testing;
