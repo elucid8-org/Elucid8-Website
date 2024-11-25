@@ -1,38 +1,17 @@
 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
-# website
+# Elucid8::Website
 
 simple website written in Cro::WebApp to be served at https://elucid8.org
 
-# deployment
+# Deployment
 - `zef install https://github.com/elucid8-org/Elucid8-Website.git`
 - `cd website`
 - `cro run`
 
 NB. this will evolve as more work is done
 
-
-
-NAME
-====
-
-Elucid8::Website - blah blah blah
-
-SYNOPSIS
-========
-
-```raku
-use Elucid8::Website;
-```
-
-DESCRIPTION
-===========
-
-Elucid8::Website is ...
-
-
-COPYRIGHT AND LICENSE
-=====================
+# COPYRIGHT AND LICENSE
 
 copyright(c) 2024 Contributors
 
