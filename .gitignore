@@ -1,2 +1,9 @@
-.precomp/
-/Elucid8-Website-*
+.DS_Store
+.precomp
+.lib/precomp
+*.swp
+.ipynb_checkpoints/*
+.log
+.pem
+.idea/
+*.iml
