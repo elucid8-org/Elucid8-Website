@@ -11,8 +11,9 @@ this site runs on a linux server preloaded with git, raku, zef (& docker-compose
 # Deployment
 - `zef install https://github.com/elucid8-org/Elucid8-Website.git --deps-only --/test`
 - `git clone https://github.com/elucid8-org/Elucid8-Website.git && cd Elucid8-Website`
-- adjust .cro.yml for your needs (e.g. HTTPS)
-- `cro run`
+- adjust .cro.yml for your needs (e.g. HTTPS) and/or
+- export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="20000"
+- `raku -Ilib service.raku`
 
 NB. this will evolve as more work is done (e.g. docker, nginx, cert)
 
@@ -30,3 +31,10 @@ docker run --rm -p 10000:10000 elucid8/website
 copyright(c) 2024 Contributors
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+
+# TODOS
+- [ ] compare to GH pages
+- [ ] grab md from cro docs
+- [ ] check if fragments released - pin deps
+- [ ] pico root (sass?)
