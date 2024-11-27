@@ -1,4 +1,3 @@
-use Cro::HTTP::Log::File;
 use Cro::HTTP::Server;
 use Elucid8::Routes;
 
@@ -9,9 +8,6 @@ my Cro::Service $http = Cro::HTTP::Server.new(
     port => %*ENV<WEBSITE_PORT> ||
         die("Missing WEBSITE_PORT in environment"),
     application => routes(),
-    after => [
-        Cro::HTTP::Log::File.new(logs => $*OUT, errors => $*ERR)
-    ]
 );
 $http.start;
 say "Listening at http://%*ENV<WEBSITE_HOST>:%*ENV<WEBSITE_PORT>";
