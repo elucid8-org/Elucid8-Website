@@ -30,6 +30,7 @@ from https://picocss.org
 # Deployment
 - `zef install https://github.com/elucid8-org/Elucid8-Website.git --deps-only --/test`
 - `git clone https://github.com/elucid8-org/Elucid8-Website.git && cd Elucid8-Website`
+- `zef install . --force-install --/test`
 - adjust .cro.yml for your needs (e.g. HTTPS) and/or
 - export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="20000"
 - `raku -Ilib service.raku`

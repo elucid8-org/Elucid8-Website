@@ -9,6 +9,14 @@ sub routes() is export {
             template 'index.crotmp', { :dark-mode };
         }
 
+        get -> 'css', *@path {
+            static 'static/css', @path;
+        }
+
+        get -> 'img', *@path {
+            static 'static/img', @path;
+        }
+
         get -> 'js', *@path {
             static 'static/js', @path;
         }
@@ -25,7 +33,7 @@ sub routes() is export {
             template 'index.crotmp', { :light-mode };
         }
 
-#        use Elucid8::Examples::Click-To-Edit;
-#        include click_to_edit => click_to_edit-routes;
+        use Elucid8::Routes::Click-To-Edit;
+        include click_to_edit => click_to_edit-routes;
     }
 }

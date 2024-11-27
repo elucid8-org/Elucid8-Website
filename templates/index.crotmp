@@ -12,11 +12,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- pico css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/a425eec628.js" crossorigin="anonymous"></script>
-  <title>Elucid8</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>elucid8</title>
 </head>
 
 <body>
@@ -24,13 +24,14 @@
   <header class="container"">
     <nav>
       <ul>
-        <li><a href="/"><strong>Elucid8</strong></a></li>
+        <li><a class="logo" href="/">elucid<b>=8</b></a></li>
       </ul>
       <ul hx-target="#content">
-        <li><a href="https://docs.raku.org/programs/02-reading-docs">docs</a></li>
+        <li><a href="https://docs.raku.org/language/pod">docs</a></li>
         <li><a href="https://finanalyst.github.io">reference</a></li>
-        <li><a href="https://github.com/orgs/elucid8-org/repositories">source code</a></li>
-        <#><li><a href="/click_to_edit">examples</a></li></#>
+        <li><a href="https://github.com/orgs/elucid8-org/repositories">github</a></li>
+        <li><a href="https://discord.gg/Bthw6vG8">talk</a></li>
+        <#><li><a hx-get="/click_to_edit">examples</a></li></#>
         <?.dark-mode>
           <li><a href="/light-mode">
             <i class="fas fa-sun"></i>
@@ -43,6 +44,7 @@
         </?>
       </ul>
     </nav>
+    <p><i>a Multilingual Documentation Framework</i></p>
   </header>
 
   <main class="container">
@@ -52,22 +54,17 @@
   </main>
 
   <footer class="container">
-    <p style="font-size:0.6em"><i>
+    <p>
       Styled with <a href="https://picocss.com" target="new">pico</a>.
       Built on <a href="https://cro.raku,org" target="new">cro</a>.
       Written in <a href="https://raku.org" target="new">raku</a>.
-    </i></p>
+    </p>
   </footer>
 
   <!-- htmx -->
   <script src="https://unpkg.com/htmx.org@1.9.5"
       integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
       crossorigin="anonymous"></script>
-  <!-- htmx extensions -->
-  <script src="https://unpkg.com/htmx.org/dist/ext/class-tools.js"></script>
-  <script src="https://unpkg.com/htmx.org/dist/ext/path-deps.js"></script>
-  <!-- hyperscript -->
-  <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
 
 </body>
 

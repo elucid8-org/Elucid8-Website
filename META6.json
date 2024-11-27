@@ -11,7 +11,8 @@
         "cro",
         "Cro::WebApp",
         "JSON::Fast",
-        "Cro::HTTP::Router"
+        "Cro::HTTP::Router",
+        "Cro::HTTP::Log::File"
     ],
     "build-depends": [],
     "provides": {
