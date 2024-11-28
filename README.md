@@ -6,10 +6,9 @@ simple website written in Cro::WebApp to be served at https://elucid8.org
 
 # Server
 
-this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
-
 # Development
-## Intellij
+
+## Pico CSS (IntelliJ)
 install sass (in the static/css dir)
   - follow this [guide](https://www.jetbrains.com/help/webstorm/transpiling-sass-less-and-scss-to-css.html)
     - install IJ sass & file watcher plugins
@@ -19,34 +18,29 @@ install sass (in the static/css dir)
     - `npm install @picocss/pico`
     - in styles.css, `@use "node_modules/@picocss/pico/scss";`
     - `sass styles.scss styles.css`  [target is then styles.scss/styles]
-    - --load-path=node_modules/@picocss/pico/scss/
-
-## Pico CSS
+    - `--load-path=node_modules/@picocss/pico/scss/`
 from https://picocss.org
-  - some tweaks as root styles (mainly to reduce scale) from [here](https://github.com/picocss/pico/discussions/482)
-    - 
-
+  - some tweaks to root styles (mainly to reduce scale) from [here](https://github.com/picocss/pico/discussions/482)
 
 # Deployment
 - `zef install https://github.com/elucid8-org/Elucid8-Website.git --deps-only --/test`
 - `git clone https://github.com/elucid8-org/Elucid8-Website.git && cd Elucid8-Website`
 - `zef install . --force-install --/test`
-- adjust .cro.yml for your needs (e.g. HTTPS) and/or
-- export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="20000"
-- `raku -Ilib service.raku`
+- adjust .cro.yml for your needs (e.g. HTTPS) -or-
+- `export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="8888"`
+- `raku [-Ilib] service.raku[&]`  <=== may need to detach from terminal
 
-TODO: had to apply --force-build with Digest::SHA1::Native
-
-NB. this will evolve as more work is done (e.g. docker, nginx, cert)
-
-with some inspiration from https://github.com/Altai-man/sample-cro-crud & advent post
-
-You can also build and run a docker image while in the app root using:
-
-```
-docker build -t elucid8/website .
-docker run --rm -p 10000:10000 elucid8/website
-```
+# Server Build
+this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
+- `sudo apt-get install build-essentials` (for Digest::SHA1::Native)
+- viz. https://chatgpt.com/share/6748a185-c690-8009-96ff-80bf8018dd7d
+  - `sudo apt-get install nginx`
+  - `sudo systemctl start nginx`
+  - `sudo systemctl enable nginx`
+  - etc
+  - `vi simple.raku`   <= port to 8888   
+  - `raku simple.raku`
+- using librasteve for certbot
 
 # COPYRIGHT AND LICENSE
 
@@ -59,4 +53,15 @@ This library is free software; you can redistribute it and/or modify it under th
 - [ ] compare to GH pages
 - [ ] grab md from cro docs
 - [ ] check if fragments released - pin deps
-- [ ] pico root (sass?)
+- [x] pico root (sass?)
+
+NB. this will evolve as more work is done (e.g. docker, nginx, cert)
+
+with some inspiration from https://github.com/Altai-man/sample-cro-crud & advent post
+
+You can also build and run a docker image while in the app root using:
+
+```
+docker build -t elucid8/website .
+docker run --rm -p 10000:10000 elucid8/website
+```
