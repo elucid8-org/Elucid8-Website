@@ -28,7 +28,7 @@ from https://picocss.org
 - `zef install . --force-install --/test`
 - adjust .cro.yml for your needs (e.g. HTTPS) -or-
 - `export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="8888"`
-- `raku [-Ilib] service.raku[&]`  <=== may need to detach from terminal
+- `raku [-Ilib] service.raku[&]`  <=== maybe detach from terminal
 
 # Server Build
 this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
