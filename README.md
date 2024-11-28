@@ -6,9 +6,9 @@ simple website written in Cro::WebApp to be served at https://elucid8.org
 
 # Server
 
-# Development
+## Development
 
-## Pico CSS (IntelliJ)
+### Pico CSS (IntelliJ)
 install sass (in the static/css dir)
   - follow this [guide](https://www.jetbrains.com/help/webstorm/transpiling-sass-less-and-scss-to-css.html)
     - install IJ sass & file watcher plugins
@@ -22,7 +22,7 @@ install sass (in the static/css dir)
 from https://picocss.org
   - some tweaks to root styles (mainly to reduce scale) from [here](https://github.com/picocss/pico/discussions/482)
 
-# Deployment
+## Deployment
 - `zef install https://github.com/elucid8-org/Elucid8-Website.git --deps-only --/test`
 - `git clone https://github.com/elucid8-org/Elucid8-Website.git && cd Elucid8-Website`
 - `zef install . --force-install --/test`
@@ -30,7 +30,7 @@ from https://picocss.org
 - `export WEBSITE_HOST="0.0.0.0" && export WEBSITE_PORT="8888"`
 - `raku [-Ilib] service.raku[&]`  <=== maybe detach from terminal
 
-# Server Build
+## Build
 this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
 - `sudo apt-get install build-essentials` (for Digest::SHA1::Native)
 - viz. https://chatgpt.com/share/6748a185-c690-8009-96ff-80bf8018dd7d
