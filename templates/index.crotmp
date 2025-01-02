@@ -27,7 +27,7 @@
         <li><a class="logo" href="/">elucid<b>=8</b></a></li>
       </ul>
       <ul hx-target="#content">
-        <li><a href="https://raku.github.io/rakudoc">RakuDoc specification</a></li>
+        <li><a href="https://raku.github.io/rakudoc">specification</a></li>
         <li><a href="https://finanalyst.github.io">reference</a></li>
         <li><a href="https://github.com/orgs/elucid8-org/repositories">github</a></li>
         <li><a href="https://discord.gg/Bthw6vG8">talk</a></li>
