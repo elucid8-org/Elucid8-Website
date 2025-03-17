@@ -34,7 +34,7 @@ from https://picocss.org
 
 ## Build
 this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
-- `sudo apt-get install build-essentials` (for Digest::SHA1::Native)
+- `sudo apt-get install build-essential` (for Digest::SHA1::Native)
 - viz. https://chatgpt.com/share/6748a185-c690-8009-96ff-80bf8018dd7d
   - `sudo apt-get install nginx`
   - `sudo systemctl start nginx`
