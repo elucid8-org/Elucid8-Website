@@ -8,9 +8,6 @@
     ],
     "auth": "zef:librasteve",
     "depends": [
-        "cro",
-        "Cro::HTTP::Router",
-        "Cro::HTTP::Log::File",
         "Air"
     ],
     "build-depends": [],
