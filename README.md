@@ -2,7 +2,7 @@
 
 # Elucid8::Website
 
-simple website written in Cro::WebApp to be served at https://elucid8.org
+simple website written in Air to be served at https://elucid8.org
 
 # Server
 
@@ -34,7 +34,7 @@ from https://picocss.org
 
 ## Build
 this site runs on a linux server preloaded with git, raku, zef (& docker-compose)
-- `sudo apt-get install build-essentials` (for Digest::SHA1::Native)
+- `sudo apt-get install build-essential` (for Digest::SHA1::Native)
 - viz. https://chatgpt.com/share/6748a185-c690-8009-96ff-80bf8018dd7d
   - `sudo apt-get install nginx`
   - `sudo systemctl start nginx`
@@ -46,7 +46,7 @@ this site runs on a linux server preloaded with git, raku, zef (& docker-compose
 
 # COPYRIGHT AND LICENSE
 
-copyright(c) 2024 Contributors
+copyright(c) 2025 Contributors
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
@@ -54,8 +54,6 @@ This library is free software; you can redistribute it and/or modify it under th
 # TODOS
 - [ ] compare to GH pages
 - [ ] grab md from cro docs
-- [ ] check if fragments released - pin deps
-- [x] pico root (sass?)
 
 NB. this will evolve as more work is done (e.g. docker, nginx, cert)
 
