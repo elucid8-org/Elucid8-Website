@@ -9,15 +9,13 @@
     "auth": "zef:librasteve",
     "depends": [
         "cro",
-        "Cro::WebApp",
-        "JSON::Fast",
         "Cro::HTTP::Router",
-        "Cro::HTTP::Log::File"
+        "Cro::HTTP::Log::File",
+        "Air"
     ],
     "build-depends": [],
     "provides": {
-        "Elucid8::Routes": "lib/Elucid8/Routes.rakumod",
-        "Elucid8::Routes::Click-To-Edit": "lib/Elucid8/Routes/Click-To-Edit.rakumod"
+        "Elucid8::Site": "lib/Elucid8/Site.rakumod"
     },
     "license": "Artistic-2.0",
     "source-url": ""

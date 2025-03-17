@@ -2,7 +2,7 @@
 
 # Elucid8::Website
 
-simple website written in Cro::WebApp to be served at https://elucid8.org
+simple website written in Air to be served at https://elucid8.org
 
 # Server
 
@@ -46,7 +46,7 @@ this site runs on a linux server preloaded with git, raku, zef (& docker-compose
 
 # COPYRIGHT AND LICENSE
 
-copyright(c) 2024 Contributors
+copyright(c) 2025 Contributors
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
