@@ -54,8 +54,6 @@ This library is free software; you can redistribute it and/or modify it under th
 # TODOS
 - [ ] compare to GH pages
 - [ ] grab md from cro docs
-- [ ] check if fragments released - pin deps
-- [x] pico root (sass?)
 
 NB. this will evolve as more work is done (e.g. docker, nginx, cert)
 
