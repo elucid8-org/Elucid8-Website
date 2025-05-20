@@ -50,18 +50,27 @@ copyright(c) 2025 Contributors
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
-
-# TODOS
-- [ ] compare to GH pages
-- [ ] grab md from cro docs
-
 NB. this will evolve as more work is done (e.g. docker, nginx, cert)
 
 with some inspiration from https://github.com/Altai-man/sample-cro-crud & advent post
 
-You can also build and run a docker image while in the app root using:
+# Docker container
+
+The website can be deployed by creating the docker image (with sudo)
+and running it, as follows
 
 ```
 docker build -t elucid8/website .
 docker run --rm -p 10000:10000 elucid8/website
 ```
+The docker image can also be found on docker.com,
+so this works as well
+```
+sudo docker pull docker.io/finanalyst/elucid8-website
+sudo docker run -d --rm -p 10000:10000 docker.io/finanalyst/elucid8-website
+```
+
+# TODOS
+- [ ] compare to GH pages
+- [ ] grab md from cro docs
+

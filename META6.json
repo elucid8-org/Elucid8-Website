@@ -1,10 +1,11 @@
 {
     "name": "Elucid8::Website",
-    "description": "blah blah blah",
+    "description": "creates a hARC website for Elucid8",
     "version": "0.0.1",
     "raku": "6.d",
     "authors": [
-        "librasteve"
+        "librasteve",
+        "finanalyst"
     ],
     "auth": "zef:librasteve",
     "depends": [
